@@ -59,7 +59,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 12px 0;
 }
 
 .logo--block {
@@ -202,7 +202,7 @@ a {
 .hero--item {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 25px;
 }
 
