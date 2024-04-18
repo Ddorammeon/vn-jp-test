@@ -101,8 +101,22 @@ a {
 
 /*================= Hero =================*/
 .hero {
-    margin-top: 190px;
+    padding-top: 190px;
     position: relative;
+}
+
+.hero__bg--more {
+    position: absolute;
+}
+
+.hero__bg--more:first-child {
+    top: 0;
+    right: 0;
+}
+
+.hero__bg--more:nth-child(2) {
+    bottom: -100px;
+    left: 0;
 }
 
 .hero__content {
@@ -149,9 +163,9 @@ a {
 }
 
 .hero__media {
-    width: 100%;
+    width: 97%;
     position: absolute;
-    top: 0;
+    top: 180px;
 }
 
 .hero__media img {
@@ -168,22 +182,15 @@ a {
 }
 
 .hero__img2 {
-    right: 0px;
+    right: 30px;
     top: 115px;
 }
 
 .hero__more {
     padding: 25px 0;
     position: relative;
-}
-
-.hero__more::before {
-    position: absolute;
-    content: "";
-    border: 1px solid #EAEAEA;
-    width: 150%;
-    top: 0;
-    left: -45px;
+    background-color: #fff;
+    border-top: 1px solid #EAEAEA;
 }
 
 .hero--list {
@@ -329,14 +336,23 @@ a {
 
 /*================= Description =================*/
 .desc {
-    margin: 80px 0;
+    padding: 80px 0;
+    position: relative;
+}
+
+.desc__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
 }
 
 .desc .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 64px;
+    z-index: 1;
 }
 
 .desc__media {
@@ -348,6 +364,7 @@ a {
 
 .desc__img {
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .desc__img:nth-child(1) {
@@ -356,13 +373,14 @@ a {
 }
 
 .desc__img:last-child {
-    padding-top: 10px;
+    margin-top: 70px;
     width: 282px;
     height: 433px;
 }
 
 .desc__content {
-    width: 39%;
+    margin-top: 90px;
+    width: 37%;
 }
 
 .desc__heading {
@@ -613,6 +631,18 @@ a {
 .object {
     background: #FFF9F6;
     padding: 80px 0 100px;
+    position: relative;
+}
+
+.object__bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.object .main-content {
+    z-index: 1;
+    position: relative;
 }
 
 .object__heading {
@@ -635,12 +665,12 @@ a {
 }
 
 .object__item {
-    width: 23.2%;
+    width: 21.8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 49.75px;
+    padding: 0 42.25px;
 }
 
 .object__item img {
