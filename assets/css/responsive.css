@@ -65,17 +65,38 @@
         padding: 4px 4px 4px 16px;
     }
 
+    .hero__content {
+        padding-bottom: 48px;
+    }
+
     .hero__media {
         position: static;
+        padding-bottom: 40px;
+        width: 100%;
     }
 
     .hero__media img {
-        position: absolute;
+        position: static;
+        width: 61.1%;
+
+    }
+
+    .hero__img2 {
+        margin-left: 135px;
+        margin-top: -35px;
     }
 
     .hero--list {
         display: grid;
         grid-template-columns: auto auto;
+    }
+
+    .hero--item:nth-child(2) .list__more {
+        width: 95px;
+    }
+
+    .list__info {
+        margin-bottom: 4px;
     }
 
     .list__info,
