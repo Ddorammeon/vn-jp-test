@@ -89,6 +89,12 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Grid CSS -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+
     <!-- Embed Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -106,10 +112,10 @@
               <img src="./assets/img/logo.svg" alt="" class="logo" />
             </a>
             <div class="logo--content">
-              <h2 class="logo__heading">
+              <h2 class="logo__heading hide-on-mobile">
                 Học viện Công nghệ Bưu chính Viễn thông
               </h2>
-              <p class="logo__desc">
+              <p class="logo__desc hide-on-mobile">
                 Posts and Telecommunications Institute of Technology
               </p>
             </div>
@@ -205,14 +211,18 @@
       <!-- Forms -->
       <section class="form">
         <div class="main-content">
-          <img src="./assets/img/form__bg.svg" alt="" class="form__bg" />
+          <!-- <img src="./assets/img/form__bg.svg" alt="" class="form__bg" /> -->
           <div class="form--content">
             <div class="form__media">
               <img src="./assets/img/envelope.svg" alt="" class="form__img1" />
-              <img src="./assets/img/bell.svg" alt="" class="form__img2" />
+              <img
+                src="./assets/img/bell.svg"
+                alt=""
+                class="form__img2 hide-on-mobile"
+              />
             </div>
             <div class="form__info">
-              <h2 class="form__heading">Đăng ký nhận tư vấn</h2>
+              <h2 class="form__heading heading1">Đăng ký nhận tư vấn</h2>
               <div class="form__action">
                 <form action="name">
                   <label for="name">Họ và tên</label><br />
@@ -246,15 +256,19 @@
 
       <!-- Description -->
       <section class="desc">
-        <img src="./assets/img/desc-bg.svg" alt="" class="desc__bg" />
+        <img
+          src="./assets/img/desc-bg.svg"
+          alt=""
+          class="desc__bg hide-on-mobile"
+        />
         <div class="main-content">
           <div class="desc__media">
             <img src="./assets/img/desc-img1.png" alt="" class="desc__img" />
             <img src="./assets/img/desc-img2.png" alt="" class="desc__img" />
           </div>
           <div class="desc__content">
-            <h2 class="desc__heading">Mô tả chương trình</h2>
-            <p class="desc__desc">
+            <h2 class="desc__heading heading1">Mô tả chương trình</h2>
+            <p class="desc__desc desc1">
               Chương trình Kỹ sư Công nghệ thông tin Việt - Nhật phối hợp chặt
               chẽ với các đối tác, doanh nghiệp đến từ Nhật Bản với mục tiêu đào
               tạo các kỹ sư CNTT định hướng theo
@@ -269,12 +283,16 @@
 
       <!-- Option -->
       <section class="option">
-        <img src="./assets/img/option-bg.svg" alt="" class="option__bg" />
+        <img
+          src="./assets/img/option-bg.svg"
+          alt=""
+          class="option__bg hide-on-mobile"
+        />
         <div class="main-content">
           <div class="option--block">
             <div class="option__content">
-              <h2 class="option__heading">Cơ hội việc làm</h2>
-              <p class="option__desc">
+              <h2 class="option__heading heading1">Cơ hội việc làm</h2>
+              <p class="option__desc desc1">
                 Sinh viên tốt nghiệp chương trình nhận bằng
                 <strong>Kỹ sư Công nghệ thông tin Việt Nhật</strong> và có cơ
                 hội làm việc tại các doanh nghiệp của Nhật Bản và nước ngoài.
@@ -286,7 +304,7 @@
                 alt=""
                 class="option__img"
               />
-              <div class="option--more">
+              <div class="option--more hide-on-mobile">
                 <img src="./assets/img/option-more-icon.svg" alt="" />
                 <p>Kỹ sư Công nghệ thông tin</p>
               </div>
@@ -343,7 +361,7 @@
       <section class="sale">
         <img src="./assets/img/sale-img.png" alt="" class="sale__img" />
         <div class="main-content">
-          <img src="./assets/img/sale-bg.svg" alt="" class="sale__bg" />
+          <!-- <img src="./assets/img/sale-bg.svg" alt="" class="sale__bg" /> -->
           <div class="sale__more">
             <img src="./assets/img/sale-bg2.svg" alt="" />
             <div class="sale__date">
@@ -354,7 +372,7 @@
           <div class="sale__content">
             <div class="sale__content--main">
               <p class="sale__title">CHƯƠNG TRÌNH</p>
-              <h2 class="sale__heading">
+              <h2 class="sale__heading heading1">
                 Kỹ sư Công nghệ thông tin Việt - Nhật
               </h2>
             </div>
@@ -370,7 +388,7 @@
 
       <!-- Object -->
       <section class="object">
-        <img src="./assets/img/object-bg.svg" alt="" class="object__bg" />
+        <!-- <img src="./assets/img/object-bg.svg" alt="" class="object__bg" /> -->
         <div class="main-content">
           <h2 class="object__heading"><span>Đối tượng</span> tuyển sinh</h2>
           <ul class="object__list">
@@ -422,7 +440,9 @@
       <!-- Activity -->
       <section class="activity">
         <div class="main-content">
-          <h2 class="activity__heading">Hoạt động <span>nổi bật</span></h2>
+          <h2 class="activity__heading heading1">
+            Hoạt động <span>nổi bật</span>
+          </h2>
           <div class="activity__content">
             <p>
               Khi học chương trình Kỹ sư Công nghệ thông tin Việt Nhật, sinh

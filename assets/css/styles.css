@@ -194,9 +194,11 @@ a {
 }
 
 .hero--list {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 48px;
+    justify-content: space-evenly;
+
 }
 
 .hero--item {
@@ -234,6 +236,8 @@ a {
 
 /*================= Form =================*/
 .form {
+    background-image: url(../img/form__bg.svg);
+    background-size: cover;
     background-color: #C31414;
     padding: 55px 0;
     position: relative;
@@ -507,7 +511,7 @@ a {
     width: 31.7%;
     border: 1px solid #EAEAEA;
     box-shadow: 0px 8px 12px 0px #00000014;
-    padding: 16px 20px;
+    padding: 29.5px 20px;
     border-radius: 12px;
     border-left: 8px solid #C31414;
     display: flex;
@@ -535,17 +539,21 @@ a {
     background: #C31414;
 }
 
+.sale .main-content {
+    background-image: url(../img/sale-bg.svg);
+}
+
 .sale__img {
     width: 423px;
     height: 200px;
     object-fit: cover;
 }
 
-.sale__bg {
+/* .sale__bg {
     margin-left: 60px;
     object-fit: cover;
     position: absolute;
-}
+} */
 
 .sale__more {
     position: relative;
@@ -632,6 +640,8 @@ a {
     background: #FFF9F6;
     padding: 80px 0 100px;
     position: relative;
+    background-image: url(../img/object-bg.svg);
+    background-size: cover;
 }
 
 .object__bg {
