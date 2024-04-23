@@ -30,7 +30,7 @@
     }
 
     .hero__bg--more:first-child {
-        width: 80%;
+        width: 100%;
     }
 
     .hero__bg--more:nth-child(2) {
@@ -48,9 +48,8 @@
     .hero__heading {
         margin-top: 8px;
         font-size: 3.2rem;
-        font-weight: 700;
         line-height: 4.37rem;
-        text-align: center;
+        width: 90%;
     }
 
     .hero--btn {
@@ -319,7 +318,11 @@
     }
 
     .object {
-        background-image: url(../img/object-block_bg.svg);
+        background-image: url(../img/object-block_bg.svg), url(../img/object-block_bg2.svg), url(../img/object-block_bg3.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: cover, auto, auto;
         padding: 56px 0 64px;
     }
 
