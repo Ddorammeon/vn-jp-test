@@ -25,6 +25,30 @@
         text-align: left;
     }
 
+    .call-now {
+        width: 41%;
+        gap: 6px;
+        padding: 12px 8px;
+        border: 1px solid #FFFFFF
+    }
+
+    .call-now__img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .call-now__hotline {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.36rem;
+    }
+
+    .call-now__phone {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.18rem;
+    }
+
     .hero {
         padding-top: 40px;
     }
@@ -277,6 +301,7 @@
         align-items: flex-start;
         padding-top: 60px;
         margin-left: 0;
+        margin-bottom: 35px;
     }
 
     .sale__title::before {
@@ -296,25 +321,6 @@
 
     .sale--btn {
         margin-top: 32px;
-    }
-
-    .sale__more {
-        margin-left: 0;
-        transform: rotate(180deg);
-    }
-
-    .sale__more img {
-        margin-left: -125px;
-        margin-bottom: 16px;
-    }
-
-    .sale__date {
-        width: 100%;
-        transform: rotate(180deg);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        right: 20px;
     }
 
     .object {
@@ -345,6 +351,10 @@
         padding: 56px 0;
     }
 
+    .activity .main-content {
+        overflow: hidden;
+    }
+
     .activity__heading {
         margin-bottom: 24px;
         text-align: center;
@@ -368,6 +378,54 @@
         width: 100%;
         justify-content: flex-end;
         margin-top: 40px;
+        gap: 0;
+        animation: slideShow 16s infinite;
+    }
+
+    @keyframes slideShow {
+        0% {
+            margin-left: 0;
+        }
+
+        10% {
+            margin-left: -100%;
+        }
+
+        20% {
+            margin-left: -100%;
+        }
+
+        30% {
+            margin-left: -200%;
+        }
+
+        40% {
+            margin-left: -200%;
+        }
+
+        50% {
+            margin-left: -300%;
+        }
+
+        60% {
+            margin-left: -300%;
+        }
+
+        70% {
+            margin-left: -400%;
+        }
+
+        80% {
+            margin-left: -400%;
+        }
+
+        90% {
+            margin-left: -500%;
+        }
+
+        100% {
+            margin-left: -500%;
+        }
     }
 
     .activity__img {

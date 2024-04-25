@@ -338,6 +338,42 @@ a {
     background-color: #C31414;
 }
 
+/* call-now */
+.call-now {
+    position: fixed;
+    right: 30px;
+    bottom: 21px;
+    visibility: visible;
+    background-color: #C31414;
+    width: 14%;
+    height: 48px;
+    cursor: pointer;
+    z-index: 200000 !important;
+    display: flex;
+    gap: 8px;
+    justify-content: normal;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0px 6px 4px 0px #00000029;
+    padding: 8px 12px;
+}
+
+.call-now__hotline {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.call-now__phone {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.73rem;
+    text-align: left;
+    color: #FFFFFF;
+}
+
 /*================= Description =================*/
 .desc {
     padding: 80px 0;
@@ -537,6 +573,7 @@ a {
     justify-content: center;
     position: relative;
     background: #C31414;
+    align-items: flex-end;
 }
 
 .sale .main-content {
@@ -555,31 +592,6 @@ a {
     position: absolute;
 } */
 
-.sale__more {
-    position: relative;
-    margin-left: 457px;
-}
-
-.sale__date {
-    position: absolute;
-    top: 11px;
-    right: 300px;
-}
-
-.sale__time {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 4.1rem;
-    color: #C31414;
-}
-
-.sale__time--left {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2.46rem;
-    text-align: center;
-    color: #C31414;
-}
 
 .sale__content {
     display: flex;
@@ -588,6 +600,7 @@ a {
     margin-left: 24px;
     position: relative;
     z-index: 1;
+    margin-bottom: 35px;
 }
 
 .sale__title {
@@ -749,7 +762,10 @@ a {
     margin-top: 30px;
 }
 
+
+
 .activity__img {
+    float: left;
     width: 298px;
     height: 298px;
     object-fit: cover;
@@ -816,7 +832,7 @@ a {
 .footer__address div {
     display: flex;
     gap: 64px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
