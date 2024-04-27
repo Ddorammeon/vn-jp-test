@@ -25,28 +25,8 @@
         text-align: left;
     }
 
-    .call-now {
-        width: 41%;
-        gap: 6px;
-        padding: 12px 8px;
-        border: 1px solid #FFFFFF
-    }
-
-    .call-now__img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .call-now__hotline {
-        font-size: 1rem;
-        font-weight: 500;
-        line-height: 1.36rem;
-    }
-
-    .call-now__phone {
-        font-size: 1.6rem;
-        font-weight: 700;
-        line-height: 2.18rem;
+    .hotline-phone-ring-wrap:hover .hotline-phone-ring {
+        transform: none
     }
 
     .hero {
