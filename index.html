@@ -109,7 +109,7 @@
         <div class="header--top">
           <div class="logo--block">
             <a href="#!">
-              <img src="./assets/img/logo.svg" alt="" class="logo" />
+              <img src="./assets/img/logo.png" alt="" class="logo" />
             </a>
             <div class="logo--content">
               <h2 class="logo__heading hide-on-mobile">
@@ -121,7 +121,7 @@
             </div>
           </div>
           <div class="language--block">
-            <img src="./assets/img/flag.svg" alt="" />
+            <img src="./assets/img/flag.png" alt="" />
             <p class="language">Tiếng Việt</p>
             <img src="./assets/img/arrow-down.svg" alt="" />
           </div>
@@ -160,12 +160,14 @@
           <div class="hero__content">
             <p class="hero__note">CHƯƠNG TRÌNH</p>
             <h1 class="hero__heading">Kỹ sư Công nghệ thông tin Việt Nhật</h1>
-            <button class="hero--btn btn">
-              <p>Đăng ký xét tuyển</p>
-              <div class="hero--btn__img">
-                <img src="./assets/img/arrow-right.svg" alt="" />
-              </div>
-            </button>
+            <a href="">
+              <button class="hero--btn btn">
+                <p>Đăng ký xét tuyển</p>
+                <div class="hero--btn__img">
+                  <img src="./assets/img/arrow-right.svg" alt="" />
+                </div>
+              </button>
+            </a>
           </div>
           <div class="hero__media">
             <img src="./assets/img/hero-img-1.png" alt="" class="hero__img1" />
@@ -246,32 +248,39 @@
             <div class="form__info">
               <h2 class="form__heading heading1">Đăng ký nhận tư vấn</h2>
               <div class="form__action">
-                <form action="name">
-                  <label for="name">Họ và tên</label><br />
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Nhập họ và tên của bạn"
-                  />
-                </form>
-                <form action="number">
-                  <label for="number">Số điện thoại</label><br />
-                  <input
-                    type="text"
-                    id="number"
-                    name="number"
-                    placeholder="Nhập số điện thoại"
-                  />
+                <form
+                  action="https://formsubmit.co/dmon70998@gmail.com"
+                  method="post"
+                >
+                  <div class="form__name">
+                    <label for="name">Họ và tên</label><br />
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Nhập họ và tên của bạn"
+                    />
+                  </div>
+                  <div class="form__phone">
+                    <label for="phone">Số điện thoại</label><br />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="Nhập số điện thoại"
+                    />
+                  </div>
+                  <div class="form__submit">
+                    <button type="submit" class="form--btn btn">
+                      <p>Đăng ký ngay</p>
+                      <div class="form--btn__img">
+                        <img src="./assets/img/arrow-right-white.svg" alt="" />
+                      </div>
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
-            <button class="form--btn btn">
-              <p>Đăng ký ngay</p>
-              <div class="form--btn__img">
-                <img src="./assets/img/arrow-right-white.svg" alt="" />
-              </div>
-            </button>
           </div>
         </div>
       </section>
@@ -397,12 +406,13 @@
                 Kỹ sư Công nghệ thông tin Việt - Nhật
               </h2>
             </div>
-            <button class="sale--btn btn">
-              <p>Đăng ký xét tuyển</p>
-              <div class="sale--btn__img">
-                <img src="./assets/img/arrow-right-white.svg" alt="" />
-              </div>
-            </button>
+            <a href=""
+              ><button class="sale--btn btn">
+                <p>Đăng ký xét tuyển</p>
+                <div class="sale--btn__img">
+                  <img src="./assets/img/arrow-right-white.svg" alt="" />
+                </div></button
+            ></a>
           </div>
         </div>
       </section>
@@ -444,11 +454,7 @@
             </li>
 
             <li class="object__item">
-              <img
-                src="./assets/img/object-icon4.svg"
-                alt=""
-                class="object__icon"
-              />
+              <img src="./assets/img/logo.png" alt="" class="object__icon" />
               <p>
                 Hoặc các phương án xét tuyển riêng của Học viện Công nghệ Bưu
                 chính Viễn thông
