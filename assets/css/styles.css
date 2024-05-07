@@ -156,6 +156,31 @@ a {
     line-height: 8.2rem;
     text-align: center;
     width: 59%;
+    white-space: nowrap;
+    border-right: 5px solid #000;
+    overflow: hidden;
+    animation: text 0.5s steps(2) infinite,
+        typing 2s linear infinite;
+}
+
+@keyframes text {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: #000;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 832.64px;
+    }
 }
 
 .hero--btn {
