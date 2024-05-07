@@ -156,30 +156,32 @@ a {
     line-height: 8.2rem;
     text-align: center;
     width: 59%;
-    white-space: nowrap;
-    border-right: 5px solid #000;
-    overflow: hidden;
-    animation: text 0.5s steps(2) infinite,
-        typing 2s linear infinite;
 }
 
-@keyframes text {
-    from {
-        border-color: transparent;
-    }
+.hero__heading span {
+    white-space: nowrap;
+    /* border-right: 5px solid #000; */
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(35) 1;
+}
 
-    to {
-        border-color: #000;
-    }
+.hero__heading span:last-child {
+    animation: typing 2s steps(26) forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    margin-top: -5px;
 }
 
 @keyframes typing {
-    from {
+    0% {
         width: 0;
+        opacity: 0;
     }
 
-    to {
-        width: 832.64px;
+    100% {
+        width: 822.64px;
+        opacity: 1;
     }
 }
 
@@ -425,10 +427,10 @@ a {
 }
 
 .hotline-phone-ring-circle-fill {
-    width: 55px;
-    height: 55px;
-    top: 25px;
-    left: 25px;
+    width: 50px;
+    height: 50px;
+    top: 28px;
+    left: 28px;
     position: absolute;
     background-color: rgba(230, 8, 8, 0.7);
     border-radius: 100%;
@@ -450,7 +452,7 @@ a {
     position: absolute;
     background-size: 20px;
     border-radius: 100%;
-    border: 2px solid transparent;
+    border: 2px solid #fff;
     -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
     animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
     -webkit-transform-origin: 50% 50%;
@@ -615,7 +617,7 @@ a {
 
 .desc .main-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 64px;
     z-index: 1;
@@ -814,8 +816,9 @@ a {
 
 .option--block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 146px;
 }
 
 .option__media {
@@ -885,25 +888,28 @@ a {
 
 .option__position {
     margin-top: 24px;
+    margin-left: 45px;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.27rem;
     color: #C31414;
+    margin-bottom: 40px;
 }
 
 .option__list {
-    margin-top: 40px;
+    margin-top: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .option__item {
-    min-height: 113px;
-    width: 31.7%;
+    min-height: 76px;
+    width: 30%;
     border: 1px solid #EAEAEA;
     box-shadow: 0px 8px 12px 0px #00000014;
-    padding: 29.5px 20px;
+    padding: 16px 14px;
     border-radius: 12px;
     border-left: 8px solid #C31414;
     display: flex;
@@ -917,10 +923,10 @@ a {
 }
 
 .option__item p {
-    width: 91%;
+    width: 97%;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.73rem;
+    line-height: 2.18rem;
 }
 
 /*================= Sale =================*/
@@ -1063,6 +1069,10 @@ a {
     text-align: center;
 }
 
+.object__item p:first-child span {
+    color: #000;
+}
+
 .object__item p span {
     color: #C31414;
 }
@@ -1103,7 +1113,7 @@ a {
 }
 
 .activity__list {
-    padding: 0 24px;
+    padding: 0 20px;
 }
 
 .activity__content p {
@@ -1120,7 +1130,7 @@ a {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     margin-top: 30px;
 }
 
@@ -1140,12 +1150,12 @@ a {
 
 .activity__img:first-child {
     top: 90px;
-    left: 60px;
+    left: 40px;
 }
 
 .activity__img:nth-child(2) {
     top: 90px;
-    right: 60px;
+    right: 40px;
 }
 
 /*================= Footer =================*/

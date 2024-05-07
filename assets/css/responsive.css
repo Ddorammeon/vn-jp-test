@@ -11,6 +11,11 @@
 
 /* Tablet & mobile */
 @media screen and (max-width: 991px) {
+    .main-content {
+        width: 375px;
+        max-width: calc(100% - 48px);
+    }
+
     .heading1 {
         font-size: 2.8rem;
         font-weight: 700;
@@ -53,7 +58,33 @@
         margin-top: 8px;
         font-size: 3.2rem;
         line-height: 4.37rem;
-        width: 90%;
+        width: 100%;
+    }
+
+    .hero__heading span {
+        white-space: nowrap;
+        /* border-right: 5px solid #000; */
+        overflow: hidden;
+        display: inline-block;
+        animation: typing 2s steps(35) 1;
+    }
+
+    .hero__heading span:last-child {
+        animation: typing 2s steps(26) forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        100% {
+            width: 100%;
+            opacity: 1;
+        }
     }
 
     .hero--btn {
@@ -98,6 +129,11 @@
         width: 95px;
     }
 
+    .hero__icon {
+        width: 28px;
+        height: 28px;
+    }
+
     .list__info {
         margin-bottom: 4px;
     }
@@ -119,7 +155,6 @@
 
     .hero--item {
         gap: 8px;
-        width: 40%;
     }
 
     .list__content {
@@ -134,9 +169,8 @@
 
     .form--content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 0;
-        margin-left: 10px;
     }
 
     .form__heading {
@@ -149,9 +183,14 @@
         align-items: flex-start;
     }
 
+    #name,
+    #phone {
+        min-width: 290px;
+    }
+
     .form__img1 {
         position: absolute;
-        left: 210px;
+        left: 195px;
         top: -10px;
         width: 40%;
     }
@@ -211,6 +250,7 @@
 
     .option--block {
         flex-direction: column-reverse;
+        gap: 0;
     }
 
     .option__img {
@@ -243,11 +283,13 @@
         font-size: 2rem;
         line-height: 2.73rem;
         margin-bottom: 20px;
+        margin-left: 0;
     }
 
     .option__list {
         flex-direction: column;
         margin-top: 0;
+        gap: 0;
     }
 
     .option__item {
@@ -315,6 +357,8 @@
 
     .object__heading {
         margin-bottom: 40px;
+        font-size: 2.8rem;
+        line-height: 3.85rem;
     }
 
     .object__list {
@@ -324,7 +368,7 @@
     }
 
     .object__item {
-        width: 90%;
+        width: 97%;
         padding: 0;
     }
 
@@ -412,6 +456,7 @@
     .activity__img {
         width: 100%;
         height: 220px;
+        padding: 0 8px;
         flex-shrink: 0;
         border-radius: 20px;
     }
