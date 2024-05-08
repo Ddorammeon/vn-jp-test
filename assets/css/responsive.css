@@ -174,7 +174,7 @@
     }
 
     .form__heading {
-        width: 50%;
+        width: 60%;
         margin-bottom: 16px;
     }
 
@@ -190,7 +190,7 @@
 
     .form__img1 {
         position: absolute;
-        left: 195px;
+        left: 210px;
         top: -10px;
         width: 40%;
     }
@@ -494,6 +494,10 @@
         font-size: 1.2rem;
         line-height: 1.5rem;
         width: 65%;
+    }
+
+    .footer__item {
+        margin-top: 16px;
     }
 
     .footer__content {

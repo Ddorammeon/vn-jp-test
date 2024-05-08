@@ -1187,9 +1187,17 @@ a {
 
 .footer__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     margin-top: 12.5px;
+}
+
+.footer__item h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 .footer__item p {
