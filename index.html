@@ -268,6 +268,7 @@
                 <form
                   action="https://formsubmit.co/nloc24.8.00@gmail.com"
                   method="POST"
+                  class="form__js"
                 >
                   <div class="form__name">
                     <label for="name">Họ và tên</label><br />
@@ -629,5 +630,23 @@
         </div>
       </section>
     </main>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".form__js").on("submit", function () {
+          swal("Title", "Message Content", "success", {
+            button: "Ok",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
