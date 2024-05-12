@@ -1105,8 +1105,8 @@ a {
 }
 
 .activity__content {
-    width: 47%;
-    padding: 34px 24px;
+    width: 46%;
+    padding: 32px 24px;
     background: #F8F8F8;
     margin: 0 auto;
     border-radius: 20px;
@@ -1130,7 +1130,7 @@ a {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -1151,13 +1151,13 @@ a {
 }
 
 .activity__img:first-child {
-    top: 90px;
-    left: 65px;
+    top: 85px;
+    left: 40px;
 }
 
 .activity__img:nth-child(2) {
-    top: 90px;
-    right: 65px;
+    top: 85px;
+    right: 40px;
 }
 
 /*================= Footer =================*/
