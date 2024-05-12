@@ -489,6 +489,19 @@
         border-radius: 20px;
     }
 
+    /*  */
+    #popupbox {
+        border-radius: 16px 16px 0 0;
+        max-width: none;
+    }
+
+    .form--popup.active #popupbox {
+        transform: translate(-50%, 15%) scale(1);
+    }
+
+    .popup__desc {
+        width: 99%;
+    }
 
 }
 
