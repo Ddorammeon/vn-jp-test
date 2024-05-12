@@ -1105,7 +1105,7 @@ a {
 }
 
 .activity__content {
-    width: 45%;
+    width: 47%;
     padding: 34px 24px;
     background: #F8F8F8;
     margin: 0 auto;
@@ -1142,6 +1142,8 @@ a {
     height: 298px;
     object-fit: cover;
 }
+
+
 
 .activity__img:first-child,
 .activity__img:nth-child(2) {
@@ -1265,4 +1267,115 @@ a {
         transform: scale(2.5, 2.5);
         opacity: 0.0;
     }
+}
+
+/* Popup */
+#popupbox {
+    width: 360px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.popup__heading {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: left;
+    color: #18202A;
+}
+
+.popup__desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+    color: #73787E;
+}
+
+.popup__desc span {
+    font-weight: 700;
+}
+
+.popup__btn {
+    margin-top: 8px;
+    background: #C31414;
+    border: 1px solid #c31414;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.form--popup {
+    z-index: 999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #e3f2fd;
+}
+
+button.show-modal,
+#popupbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form--popup.active .show-modal {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form--popup.active .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#popupbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.form--popup.active #popupbox {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/*  */
+
+
+.owl-nav,
+.owl-dots {
+    display: none;
 }

@@ -86,6 +86,9 @@
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
@@ -288,7 +291,7 @@
                       placeholder="Nhập số điện thoại"
                     />
                   </div>
-                  <div class="form__submit">
+                  <div class="form__submit show-modal">
                     <button type="submit" class="form--btn btn">
                       <p>Đăng ký ngay</p>
                       <div class="form--btn__img">
@@ -300,6 +303,22 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="form--popup">
+        <span class="overlay"></span>
+        <div id="popupbox">
+          <img src="./assets/img/fill-checked.svg" alt="" class="popup__img" />
+          <h2 class="popup__heading">Đăng ký nhận tư vấn thành công</h2>
+          <p class="popup__desc">
+            Vui lòng để ý điện thoại. Trung tâm Đào tạo Quốc tế sẽ sớm liên hệ
+            lại qua số điện thoại bạn cung cấp để tư vấn kĩ hơn về chương trình.
+            Nếu bạn có câu hỏi gì có thể liên hệ với chúng tôi qua:
+            <br />Email: <span>cie@ptit.edu.vn</span> <br />Hotline:
+            <span>088 616 0606</span>
+          </p>
+          <button class="popup__btn close-btn">Đã hiểu</button>
         </div>
       </section>
 
@@ -516,52 +535,77 @@
               <li>
                 <p>Đào tạo văn hóa tác phong làm việc trong công ty Nhật</p>
               </li>
-              <li>
-                <p>
-                  Kết nối giao lưu các chuyên gia, doanh nghiệp Nhật Bản với
-                  sinh viên
-                </p>
-              </li>
             </ul>
+            <p>
+              Kết nối giao lưu các chuyên gia, doanh nghiệp Nhật Bản với sinh
+              viên
+            </p>
           </div>
-          <div class="activity__media swiper mySwiper">
+
+          <slide class="activity__media hide-on-mobile">
             <img
               src="./assets/img/activity-img1.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
             <img
               src="./assets/img/activity-img2.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
             <img
               src="./assets/img/activity-img3.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
             <img
               src="./assets/img/activity-img4.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
             <img
               src="./assets/img/activity-img5.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
             <img
               src="./assets/img/activity-img6.png"
               alt=""
               class="activity__img"
-              loading="lazy"
             />
-          </div>
+          </slide>
+          <slide class="activity__media owl-carousel">
+            <img
+              src="./assets/img/activity-img1.png"
+              alt=""
+              class="activity__img"
+            />
+            <img
+              src="./assets/img/activity-img2.png"
+              alt=""
+              class="activity__img"
+            />
+            <img
+              src="./assets/img/activity-img3.png"
+              alt=""
+              class="activity__img"
+            />
+            <img
+              src="./assets/img/activity-img4.png"
+              alt=""
+              class="activity__img"
+            />
+            <img
+              src="./assets/img/activity-img5.png"
+              alt=""
+              class="activity__img"
+            />
+            <img
+              src="./assets/img/activity-img6.png"
+              alt=""
+              class="activity__img"
+            />
+          </slide>
         </div>
       </section>
 
@@ -632,21 +676,55 @@
     </main>
 
     <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
-    ></script>
+
+    <!--  -->
+    <script src="./assets/owl.carousel.js"></script>
+    <script src="./assets/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".form__js").on("submit", function () {
-          swal("Title", "Message Content", "success", {
-            button: "Ok",
-          });
-        });
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        nav: false,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        lazyload: true,
+        autoplaySpeed: 2000,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: false,
+          },
+        },
       });
+    </script>
+
+    <!-- popup -->
+    <script>
+      const section = document.querySelector(".form--popup"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".show-modal"),
+        closeBtn = document.querySelector(".close-btn");
+      showBtn.addEventListener("click", () => section.classList.add("active"));
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+      closeBtn.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
     </script>
   </body>
 </html>
