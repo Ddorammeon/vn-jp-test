@@ -1,6 +1,4 @@
 <?php
-
-
 	require './PHPMailer-master/src/Exception.php';
 	require './PHPMailer-master/src/PHPMailer.php';
 	require './PHPMailer-master/src/SMTP.php';
@@ -34,6 +32,5 @@
 	$mail ->send();
 	
 	echo "Email sent successfully!";
-	
 
 ?>
