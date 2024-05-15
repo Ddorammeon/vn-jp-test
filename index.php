@@ -1,3 +1,50 @@
+<?php
+
+  require './PHPMailer-master/src/Exception.php';
+	require './PHPMailer-master/src/PHPMailer.php';
+	require './PHPMailer-master/src/SMTP.php';
+  use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;
+
+if ($_POST) {
+	
+	try {
+    $name = $_POST["name"];
+	$phone = $_POST["phone"];
+
+	$mail = new PHPMailer(true);
+
+	$mail->SMTPDebug = 2;
+	$mail ->isSMTP();
+	$mail ->SMTPAuth = "true";
+
+	$mail ->Host = "smtp.gmail.com";
+	$mail ->SMTPSecure = 'ssl';
+	$mail ->Port = 465;
+
+	$mail ->Username = "dmon70998@gmail.com";
+	$mail ->Password = "fllg sjue mayg fpwb";
+
+	$mail ->setFrom("dmon70998@gmail.com", "VN-JP Landing Pages");
+	$mail ->addAddress("dmon70998@gmail.com", "CIE-PTIT");
+
+	$mail->isHTML(true);
+	$message = "Name: $name\nPhone: $phone";
+	$subject = "New Submission";
+  $mail ->Body = $message;
+  $mail ->Subject = $subject;
+
+	$mail ->send();
+
+  }
+
+  catch (Exception $e) {
+  }
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -268,7 +315,7 @@
             <div class="form__info">
               <h2 class="form__heading heading1">Đăng ký nhận tư vấn</h2>
               <div class="form__action">
-                <form action="./connection.php" method="POST" class="form__js">
+                <form action="/" method="POST" class="form__js">
                   <div class="form__name">
                     <label for="name">Họ và tên</label><br />
                     <input
@@ -723,5 +770,6 @@
         section.classList.remove("active")
       );
     </script>
+
   </body>
 </html>
