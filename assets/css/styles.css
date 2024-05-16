@@ -186,11 +186,12 @@ a {
 }
 
 .hero--btn {
+    cursor: pointer;
     margin-top: 40px;
     background-color: #C31414;
 }
 
-.hero--btn a {
+.hero--btn p {
     color: #ffffff;
 }
 
@@ -993,11 +994,12 @@ a {
 }
 
 .sale--btn {
+    cursor: pointer;
     margin-right: 80px;
     background-color: #fff;
 }
 
-.sale--btn a {
+.sale--btn p {
     color: #C31414;
 }
 
