@@ -7,14 +7,13 @@
 	use PHPMailer\PHPMailer\Exception;
 
 if ($_POST) {
-	
 	try {
-    $name = $_POST["name"];
+  $name = $_POST["name"];
 	$phone = $_POST["phone"];
 
 	$mail = new PHPMailer(true);
 
-	$mail->SMTPDebug = 2;
+	$mail ->SMTPDebug = 2;
 	$mail ->isSMTP();
 	$mail ->SMTPAuth = "true";
 
@@ -26,21 +25,18 @@ if ($_POST) {
 	$mail ->Password = "fllg sjue mayg fpwb";
 
 	$mail ->setFrom("dmon70998@gmail.com", "VN-JP Landing Pages");
-	$mail ->addAddress("dmon70998@gmail.com", "CIE-PTIT");
+	$mail ->addAddress("cie@ptit.edu.vn", "CIE-PTIT");
 
-	$mail->isHTML(true);
+	$mail ->isHTML(true);
 	$message = "Name: $name\nPhone: $phone";
 	$subject = "New Submission";
   $mail ->Body = $message;
   $mail ->Subject = $subject;
 
 	$mail ->send();
-
   }
-
   catch (Exception $e) {
   }
-
 }
 
 ?>
