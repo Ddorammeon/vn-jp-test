@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 
   require './PHPMailer-master/src/Exception.php';
 	require './PHPMailer-master/src/PHPMailer.php';
@@ -39,7 +39,7 @@ if ($_POST) {
   }
 }
 
-?> -->
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
