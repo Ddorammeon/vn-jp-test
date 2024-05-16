@@ -1,4 +1,4 @@
- <?php
+<?php
 
   require './PHPMailer-master/src/Exception.php';
 	require './PHPMailer-master/src/PHPMailer.php';
@@ -13,33 +13,14 @@ if ($_POST) {
 
 	$mail = new PHPMailer(true);
 
-	$mail ->SMTPDebug = 2;
-	$mail ->isSMTP();
-	$mail ->SMTPAuth = "true";
-
-	$mail ->Host = "smtp.gmail.com";
-	$mail ->SMTPSecure = 'ssl';
-	$mail ->Port = 465;
-
-	$mail ->Username = "dmon70998@gmail.com";
-	$mail ->Password = "fllg sjue mayg fpwb";
-
-	$mail ->setFrom("dmon70998@gmail.com", "VN-JP Landing Pages");
-	$mail ->addAddress("cie@ptit.edu.vn", "CIE-PTIT");
-
-	$mail ->isHTML(true);
-	$message = "Name: $name\nPhone: $phone";
-	$subject = "New Submission";
-  $mail ->Body = $message;
-  $mail ->Subject = $subject;
-
-	$mail ->send();
-  }
-  catch (Exception $e) {
-  }
-}
-
-?> 
+	$mail ->SMTPDebug = 2; $mail ->isSMTP(); $mail ->SMTPAuth = "true"; $mail ->Host
+= "smtp.gmail.com"; $mail ->SMTPSecure = 'ssl'; $mail ->Port = 465; $mail
+->Username = "dmon70998@gmail.com"; $mail ->Password = "fllg sjue mayg fpwb";
+$mail ->setFrom("dmon70998@gmail.com", "VN-JP Landing Pages"); $mail
+->addAddress("cie@ptit.edu.vn", "CIE-PTIT"); $mail ->isHTML(true); $message =
+"Name: $name\nPhone: $phone"; $subject = "New Submission"; $mail ->Body =
+$message; $mail ->Subject = $subject; $mail ->send(); } catch (Exception $e) { }
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -213,6 +194,8 @@ if ($_POST) {
               <span> Việt Nhật</span>
             </h1>
             <a
+              target="_blank"
+              rel="noopenner"
               href="https://cie.ptit.edu.vn/vi/prog/chuong-trinh-ky-su-cong-nghe-thong-tin-viet-nhat-cua-hoc-vien-cong-nghe-buu-chinh-vien-thong-nam-2024/"
             >
               <button class="hero--btn btn">
@@ -485,6 +468,8 @@ if ($_POST) {
               </h2>
             </div>
             <a
+              target="_blank"
+              rel="noopenner"
               href="https://cie.ptit.edu.vn/vi/prog/chuong-trinh-ky-su-cong-nghe-thong-tin-viet-nhat-cua-hoc-vien-cong-nghe-buu-chinh-vien-thong-nam-2024/"
               ><button class="sale--btn btn">
                 <p>Đăng ký xét tuyển</p>
