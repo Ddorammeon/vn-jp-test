@@ -1107,7 +1107,7 @@ a {
 }
 
 .activity__content {
-    width: 45%;
+    width: 63rem;
     padding: 24px;
     background: #F8F8F8;
     margin: 0 auto;
@@ -1154,14 +1154,14 @@ a {
 
 .activity__img:first-child {
     top: 85px;
-    margin-left: -99rem;
-    margin-top: 1rem;
+    margin-left: -98rem;
+    margin-top: 2rem;
 }
 
 .activity__img:nth-child(2) {
     top: 85px;
-    margin-right: -99rem;
-    margin-top: 1rem;
+    margin-right: -98rem;
+    margin-top: 2rem;
 }
 
 /*================= Footer =================*/
