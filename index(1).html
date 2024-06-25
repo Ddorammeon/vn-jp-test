@@ -184,39 +184,10 @@ if ($_POST) {
               </p>
             </div>
           </div>
-          <div class="dropdown">
-            <div class="language--block">
-              <img src="./assets/img/flag.png" alt="" class="selectedImg" />
-              <p class="select">Tiếng Việt</p>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.4713 5.52859C12.7317 5.78894 12.7317 6.21105 12.4713 6.4714L8.47132 10.4714C8.21097 10.7317 7.78886 10.7317 7.52851 10.4714L3.52851 6.4714C3.26816 6.21105 3.26816 5.78894 3.52851 5.52859C3.78886 5.26824 4.21097 5.26824 4.47132 5.52859L7.99992 9.05719L11.5285 5.52859C11.7889 5.26824 12.211 5.26824 12.4713 5.52859Z"
-                  fill="#7F7F7F"
-                />
-              </svg>
-            </div>
-
-            <div class="dropdown--list">
-              <a href="" class="dropdown--item dropdown--item__active">
-                <img src="./assets/img/flag.png" alt="" class="language__img" />
-                <p class="language">Tiếng Việt</p>
-              </a>
-              <a
-                href="https://ddorammeon.github.io/jp-test/"
-                class="dropdown--item"
-              >
-                <img src="./assets/img/flag.png" alt="" class="language__img" />
-                <p class="language">Japanese</p>
-              </a>
-            </div>
+          <div class="language--block">
+            <img src="./assets/img/flag.png" alt="" />
+            <p class="language">Tiếng Việt</p>
+            <!--                <img src="./assets/img/arrow-down.svg" alt=""/>-->
           </div>
         </div>
       </div>
@@ -237,7 +208,7 @@ if ($_POST) {
         </div>
         <div class="hotline-bar hide-on-mobile">
           <a href="tel:088 616 0606">
-            <span class="text-hotline">GỌI NGAY HOTLINE</span>
+            <span class="text-hotline">すぐ電話</span>
             <span class="text-hotline">088 616 0606</span>
           </a>
         </div>
@@ -251,13 +222,13 @@ if ($_POST) {
         <img src="./assets/img/hero-bg2.svg" alt="" class="hero__bg--more" />
         <div class="main-content">
           <div class="hero__content">
-            <p class="hero__note">CHƯƠNG TRÌNH</p>
+            <p class="hero__note">プログラム</p>
             <h1 class="hero__heading">
               <span>
                 <br class="show-on-mobile" />
-                Công nghệ thông tin </span
+                情報技術</span
               ><br />
-              <span> Việt Nhật</span>
+              <span> ベトナム - 日本</span>
             </h1>
             <a
               target="_blank"
@@ -265,7 +236,7 @@ if ($_POST) {
               href="https://tuyensinh.ptit.edu.vn/"
             >
               <button class="hero--btn btn">
-                <p>Đăng ký xét tuyển</p>
+                <p>入試情報はこちら</p>
                 <div class="hero--btn__img">
                   <img src="./assets/img/arrow-right.svg" alt="" />
                 </div>
@@ -282,7 +253,6 @@ if ($_POST) {
       <div class="hero__more">
         <!-- faq-more -->
         <buttion class="question-faqs">
-          <div class="question-faqs--item">
             <img
               src="./assets/img/faqs-question.png"
               alt=""
@@ -290,7 +260,7 @@ if ($_POST) {
             />
             <div class="question-faqs__content">
               <p class="question-faqs__info">
-                Câu hỏi thường gặp <br class="show-on-mobile" />
+                よくある質問 <br class="show-on-mobile" />
               </p>
 
               <a
@@ -298,7 +268,7 @@ if ($_POST) {
                 target="_blank"
                 class="question-faqs__more"
               >
-                <p>Xem tất cả</p>
+                <p>全て表示</p>
 
                 <img
                   class="question-faqs__img"
@@ -320,11 +290,11 @@ if ($_POST) {
               />
               <div class="list__content">
                 <p class="list__info">
-                  Mức lương sau <br class="show-on-mobile" />
-                  tốt nghiệp
+                  卒業後の給料 <br class="show-on-mobile" />
+                  
                 </p>
                 <p class="list__more">
-                  >500 <br class="show-on-mobile" /><span>triệu VNĐ/năm</span>
+                  >5億 <br class="show-on-mobile" /><span>VND /年</span>
                 </p>
               </div>
             </li>
@@ -336,8 +306,8 @@ if ($_POST) {
                 class="hero__icon"
               />
               <div class="list__content">
-                <p class="list__info">Đầu ra tiếng Nhật</p>
-                <p class="list__more">JLPT N3 <span>(tương đương)</span></p>
+                <p class="list__info">日本語基準</p>
+                <p class="list__more">JLPT N3  <span>(相当)</span></p>
               </div>
             </li>
 
@@ -348,10 +318,10 @@ if ($_POST) {
                 class="hero__icon"
               />
               <div class="list__content">
-                <p class="list__info">Tiêu chuẩn đầu ra</p>
+                <p class="list__info">卒業基準</p>
                 <p class="list__more">
                   ITSS - <br class="show-on-mobile" /><span
-                    >Chuẩn kỹ sư CNTT Nhật Bản</span
+                    >日本ITエンジニア基準</span
                   >
                 </p>
               </div>
@@ -365,10 +335,10 @@ if ($_POST) {
               />
               <div class="list__content">
                 <p class="list__info">
-                  Cam kết sau <br class="show-on-mobile" />tốt nghiệp
+                  後保証 <br class="show-on-mobile" />卒業
                 </p>
                 <p class="list__more">
-                  100% <br class="show-on-mobile" /><span> có việc làm</span>
+                  100% <br class="show-on-mobile" /><span> 就職可</span>
                 </p>
               </div>
             </li>
@@ -390,25 +360,25 @@ if ($_POST) {
               />
             </div>
             <div class="form__info">
-              <h2 class="form__heading heading1">Đăng ký nhận tư vấn</h2>
+              <h2 class="form__heading heading1">入学試験相談はこちら</h2>
               <div class="form__action">
                 <form class="form__js" id="infoForm">
                   <div class="form__name">
-                    <label for="name">Họ và tên</label><br />
+                    <label for="name">氏名</label><br />
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      placeholder="Nhập họ và tên của bạn"
+                      placeholder="氏名記入"
                     />
                   </div>
                   <div class="form__phone">
-                    <label for="phone">Số điện thoại</label><br />
+                    <label for="phone">電話番号</label><br />
                     <input
                       type="text"
                       id="phone"
                       name="phone"
-                      placeholder="Nhập số điện thoại"
+                      placeholder="電話番号記入"
                     />
                   </div>
                   <div class="form__submit show-modal">
@@ -418,7 +388,7 @@ if ($_POST) {
                       class="form--btn btn"
                       value="Submit Info"
                     >
-                      <p>Đăng ký ngay</p>
+                      <p>すぐ登録</p>
                       <div class="form--btn__img">
                         <img src="./assets/img/arrow-right-white.svg" alt="" />
                       </div>
@@ -435,15 +405,15 @@ if ($_POST) {
         <span class="overlay"></span>
         <div id="popupbox">
           <img src="./assets/img/fill-checked.svg" alt="" class="popup__img" />
-          <h2 class="popup__heading">Đăng ký nhận tư vấn thành công</h2>
+          <h2 class="popup__heading">相談登録が成功しました。</h2>
           <p class="popup__desc">
-            Vui lòng để ý điện thoại. Trung tâm Đào tạo Quốc tế sẽ sớm liên hệ
-            lại qua số điện thoại bạn cung cấp để tư vấn kĩ hơn về chương trình.
-            Nếu bạn có câu hỏi gì có thể liên hệ với chúng tôi qua:
-            <br />Email: <span>cie@ptit.edu.vn</span> <br />Hotline:
+            電話にご注意ください。 国際教育センターは、
+            提供された電話番号でより詳しくプログラムについて相談するためにすぐに連絡します。
+            何か質問があれば、以下にご連絡ください：
+            <br />:メール <span>cie@ptit.edu.vn</span> <br />:ホットライン
             <span>088 616 0606</span>
           </p>
-          <button class="popup__btn close-btn">Đã hiểu</button>
+          <button class="popup__btn close-btn">了解しました。</button>
         </div>
       </section>
 
@@ -460,15 +430,15 @@ if ($_POST) {
             <img src="./assets/img/desc-img2.png" alt="" class="desc__img" />
           </div>
           <div class="desc__content">
-            <h2 class="desc__heading heading1">Mô tả chương trình</h2>
+            <h2 class="desc__heading heading1">プログラム概要</h2>
             <p class="desc__desc desc1">
-              Chương trình Công nghệ thông tin Việt - Nhật phối hợp chặt chẽ với
-              các đối tác, doanh nghiệp đến từ Nhật Bản với mục tiêu đào tạo các
-              kỹ sư CNTT định hướng theo
-              <strong>chuẩn kỹ năng CNTT Nhật Bản (ITSS)</strong> - tiêu chuẩn
-              khắt khe được các tổ chức quốc tế đánh giá cao. Sinh viên sẽ được
-              đào tạo trực tiếp bởi các chuyên gia từ doanh nghiệp Nhật Bản,
-              tham gia thực tập và thực chiến với các dự án lớn.
+              ベトナムと日本の情報技術プログラムは
+              、日本からのパートナーや企業と緊密に協力し、
+              情報技術エンジニアを育成する目的を持っています
+              <strong>日本の(ITSS)技能標準</strong> - に準拠した IT エンジニアの育成を目的として、
+              日本のパートナーや企業と緊密に連携しています。
+              学生は日本企業の専門家から直接訓練を受け、
+              インターンシップに参加し、大規模プロジェクトで実習することができます。
             </p>
           </div>
         </div>
@@ -490,11 +460,10 @@ if ($_POST) {
         <div class="main-content">
           <div class="option--block">
             <div class="option__content">
-              <h2 class="option__heading heading1">Cơ hội việc làm</h2>
+              <h2 class="option__heading heading1">就職・キャリア</h2>
               <p class="option__desc desc1">
-                Sinh viên tốt nghiệp chương trình nhận bằng
-                <strong>Kỹ sư Công nghệ thông tin Việt Nhật</strong> và có cơ
-                hội làm việc tại các doanh nghiệp của Nhật Bản và nước ngoài.
+                卒業生プログラムの学生は学位を取得します
+                <strong>ベトナム日本情報技術エンジニア</strong>そして、日本国内外の企業で働くチャンスがあります。 
               </p>
             </div>
             <div class="option__media">
@@ -505,51 +474,50 @@ if ($_POST) {
               />
               <div class="option--more hide-on-mobile">
                 <img src="./assets/img/option-more-icon.svg" alt="" />
-                <p>Kỹ sư Công nghệ thông tin</p>
+                <p>情報技術エンジニア</p>
               </div>
             </div>
           </div>
-          <h3 class="option__position">Vị trí công việc</h3>
+          <h3 class="option__position">役職先</h3>
           <ul class="option__list">
             <li class="option__item">
               <p>
-                Chuyên gia lập trình ứng dụng web, ứng dụng di động, front-end,
-                back-end, phần mềm nhúng
+                Web アプリケーション、モバイル アプリケーション、フロントエンド、バックエンド、組み込みソフトウェアのインストールの専門家
               </p>
             </li>
             <li class="option__item">
               <p>
-                Chuyên gia kiểm thử, phân tích nghiệp vụ, phân tích hệ thống
+                テスト、業務分析、システム分析の専門家
               </p>
             </li>
             <li class="option__item">
-              <p>Chuyên gia thiết kế hệ thống, quản lý dự án phần mềm</p>
+              <p>システム設計とソフトウェアプロジェクト管理の専門家</p>
             </li>
           </ul>
 
           <ul class="option__list">
             <li class="option__item">
-              <p>Chuyên gia quản lý, điều hành lĩnh vực Công nghệ thông tin</p>
+              <p>情報技術の管理および運用の専門家</p>
             </li>
             <li class="option__item">
               <p>
-                Chuyên gia thiết kế và quản trị cơ sở dữ liệu, mạng máy tính
+                データベース設計と管理、コンピュータネットワークの専門家
               </p>
             </li>
             <li class="option__item">
-              <p>Chuyên gia an ninh mạng</p>
+              <p>サイバーセキュリティの専門家</p>
             </li>
           </ul>
 
           <ul class="option__list">
             <li class="option__item">
-              <p>Chuyên gia phân tích dữ liệu</p>
+              <p>データ分析の専門家</p>
             </li>
             <li class="option__item">
-              <p>Chuyên viên tư vấn bán hàng, Chuyên viên tư vấn kỹ thuật</p>
+              <p>営業コンサルタント、技術コンサルタント</p>
             </li>
             <li class="option__item">
-              <p>Kỹ sư cầu nối Việt - Nhật lĩnh vực Công nghệ thông tin</p>
+              <p>越日情報技術ブリッジエンジニア</p>
             </li>
           </ul>
         </div>
@@ -563,9 +531,9 @@ if ($_POST) {
 
           <div class="sale__content">
             <div class="sale__content--main">
-              <p class="sale__title">CHƯƠNG TRÌNH</p>
+              <p class="sale__title">プログラム</p>
               <h2 class="sale__heading heading1">
-                Công nghệ thông tin Việt - Nhật
+                越日情報技術
               </h2>
             </div>
             <a
@@ -574,7 +542,8 @@ if ($_POST) {
               href="https://tuyensinh.ptit.edu.vn/"
             >
               <button class="sale--btn btn">
-                <p>Đăng ký xét tuyển</p>
+                <p>入試情報はこちら
+                </p>
                 <div class="sale--btn__img">
                   <img src="./assets/img/arrow-right-white.svg" alt="" />
                 </div>
@@ -588,7 +557,7 @@ if ($_POST) {
       <section class="object">
         <!-- <img src="./assets/img/object-bg.svg" alt="" class="object__bg" /> -->
         <div class="main-content">
-          <h2 class="object__heading"><span>Đối tượng</span> tuyển sinh</h2>
+          <h2 class="object__heading"><span>対象</span> 入試</h2>
           <ul class="object__list">
             <li class="object__item">
               <img
@@ -597,8 +566,8 @@ if ($_POST) {
                 class="object__icon"
               />
               <p>
-                <span style="color: #000">Tốt nghiệp</span>
-                <span style="color: #000">Trung học phổ thông</span>
+                <span style="color: #000">卒業</span>
+                <span style="color: #000">高等学校</span>
               </p>
             </li>
 
@@ -609,8 +578,9 @@ if ($_POST) {
                 class="object__icon"
               />
               <p>
-                Trúng tuyển kỳ thi tuyển sinh <br class="show-on-mobile" />
-                đại học hệ chính quy
+                入学試験に合格する <br class="show-on-mobile" />
+                大学 <br />
+                正規
               </p>
             </li>
 
@@ -620,16 +590,15 @@ if ($_POST) {
                 alt=""
                 class="object__icon"
               />
-              <p>Tổ hợp xét tuyển</p>
-              <p><span>A00</span>: Toán, Lý, Hoá</p>
-              <p><span>A01</span>: Toán, Lý, Anh</p>
+              <p>選抜組科目</p>
+              <p><span>A00</span>: 数学、物理学、化学</p>
+              <p><span>A01</span>: 数学、物理、英語</p>
             </li>
 
             <li class="object__item">
               <img src="./assets/img/logo.png" alt="" class="object__icon" />
               <p>
-                Hoặc các phương án xét tuyển riêng của Học viện Công nghệ Bưu
-                chính Viễn thông
+                または郵政通信技術大学から他の入試選抜
               </p>
             </li>
           </ul>
@@ -639,7 +608,7 @@ if ($_POST) {
       <!-- Activity -->
       <section class="activity">
         <h2 class="activity__heading heading1">
-          Hoạt động <span>nổi bật</span>
+          の活動 <span>注目</span>
         </h2>
         <div class="main-content">
           <!-- <h2 class="activity__heading heading1">
@@ -649,24 +618,22 @@ if ($_POST) {
             <ul class="activity__list" style="list-style-type: disc">
               <li>
                 <p>
-                  Thực tập doanh nghiệp, hội thảo công nghệ, nghiên cứu khoa học
+                  企業インターンシップ、技術セミナー、科学研究
                 </p>
               </li>
               <li>
                 <p>
-                  Định hướng nghề nghiệp, trang bị các kỹ năng mềm, kỹ năng làm
-                  việc cho sinh viên
+                  キャリア支援、社会スキルと実務スキルの習得
                 </p>
               </li>
               <li>
                 <p>
-                  Đào tạo văn hóa, tác phong làm việc trong công ty Nhật Bản
+                  日系企業文化に関するビジネスマナー育成
                 </p>
               </li>
               <li>
                 <p>
-                  Kết nối và giao lưu các chuyên gia, doanh nghiệp Nhật Bản với
-                  sinh viên
+                  日本の専門家や企業と交流
                 </p>
               </li>
             </ul>
@@ -746,11 +713,10 @@ if ($_POST) {
             <img src="./assets/img/ques-img.png" alt="" class="ques__img" />
           </div>
           <div class="ques--content">
-            <h2 class="ques--content__heading">Câu hỏi thường gặp</h2>
+            <h2 class="ques--content__heading">よくある質問</h2>
             <p class="ques--content__desc">
-              Chúng tôi hy vọng có thể giải đáp những câu hỏi và thắc mắc của
-              học sinh và phụ huynh trong suốt quá trình tìm hiểu thông tin
-              chương trình.
+              よくある質問
+              プログラムの情報を参考過程を通じて、学生や保護者からの質問や懸念に答えられることを願っています。
             </p>
             <div class="ques__list">
               <div class="ques__item">
@@ -760,7 +726,7 @@ if ($_POST) {
                   class="ques__item--icon"
                 />
                 <p class="ques__item--desc">
-                  Điều kiện tuyển sinh và yêu cầu đầu vào
+                  入試情報および応募要項
                 </p>
               </div>
 
@@ -770,7 +736,7 @@ if ($_POST) {
                   alt=""
                   class="ques__item--icon"
                 />
-                <p class="ques__item--desc">Thông tin chương trình</p>
+                <p class="ques__item--desc">プログラム情報</p>
               </div>
 
               <div class="ques__item">
@@ -779,7 +745,7 @@ if ($_POST) {
                   alt=""
                   class="ques__item--icon"
                 />
-                <p class="ques__item--desc">Chất lượng đầu ra</p>
+                <p class="ques__item--desc">学部卒基準</p>
               </div>
 
               <div class="ques__item">
@@ -788,7 +754,7 @@ if ($_POST) {
                   alt=""
                   class="ques__item--icon"
                 />
-                <p class="ques__item--desc">Tra cứu thông tin</p>
+                <p class="ques__item--desc">情報探究</p>
               </div>
             </div>
 
@@ -798,7 +764,7 @@ if ($_POST) {
               class="ques__submit--link"
             >
               <button class="ques__submit btn">
-                <p class="ques__submit--desc">Xem tất cả</p>
+                <p class="ques__submit--desc">全て表示</p>
                 <img
                   src="./assets/img/arrow-right.svg"
                   alt=""
@@ -914,55 +880,38 @@ if ($_POST) {
                     font-family: Manrope;
                     color: #ffffff;
                     margin-bottom: 6px;
-                    line-height: 21.86px;
                   "
                 >
-                  Học viện Công nghệ Bưu chính Viễn thông
+                郵政通信技術大学
                 </h3>
-                <h3>Trung tâm Đào tạo Quốc tế</h3>
+                <h3>国際教育センター</h3>
               </div>
+              <!-- <p>
+                Chúng tôi tiên phong trong việc xây dựng và triển khai các
+                chương trình đào tạo hệ chất lượng cao.
+              </p> -->
             </div>
             <div class="footer__section">
-              <p class="title">Liên kết nhanh</p>
+              <p class="title">外部連携</p>
               <ul>
                 <li>
-                  <img
-                    src="./assets/img/arrow-right-white.svg"
-                    alt=""
-                    class="show-on-mobile"
-                  />
                   <a href="https://portal.dtqt.edu.vn/" target="_blank"
-                    >Cổng thông tin Học viện CNBCVT</a
+                    >郵政通信技術大学ポータル</a
                   >
                 </li>
                 <li>
-                  <img
-                    src="./assets/img/arrow-right-white.svg"
-                    alt=""
-                    class="show-on-mobile"
-                  />
                   <a href="https://cie.ptit.edu.vn/" target="_blank"
-                    >Trang chủ Trung tâm ĐTQT</a
+                    >国際教育センターホームページ</a
                   >
                 </li>
                 <li>
-                  <img
-                    src="./assets/img/arrow-right-white.svg"
-                    alt=""
-                    class="show-on-mobile"
-                  />
                   <a href="https://daotao.ptit.edu.vn/" target="_blank"
-                    >Quản lý đào tạo</a
+                    >教育管理</a
                   >
                 </li>
                 <li>
-                  <img
-                    src="./assets/img/arrow-right-white.svg"
-                    alt=""
-                    class="show-on-mobile"
-                  />
                   <a href="https://tuyensinh.dtqt.edu.vn/" target="_blank"
-                    >Cổng thông tin tuyển sinh</a
+                    >入試ポータル</a
                   >
                 </li>
               </ul>
@@ -981,21 +930,19 @@ if ($_POST) {
               </div>
             </div>
             <div class="footer__section">
-              <p class="title">Bạn cần giúp đỡ?</p>
+              <p class="title">お手伝いが必要ですか?</p>
               <p class="address">
-                <img src="./assets/img/location.svg" alt="địa chỉ" /> Địa chỉ
+                <img src="./assets/img/location.svg" alt="địa chỉ" /> 住所
               </p>
               <p class="address1">
-                Tầng 5, Tòa nhà A1<br />96A Trần Phú, Quận Hà Đông, Hà Nội
+                ５階、A1ビル<br />96A Tran Phu, Ha Dong, Ha Noi
               </p>
               <p class="address">
-                <img src="./assets/img/call.svg" alt="địa chỉ" /> Liên lạc trực
-                tiếp
+                <img src="./assets/img/call.png" alt="địa chỉ" /> 直接連絡
               </p>
               <p class="address1">088.616.0606</p>
               <p class="address">
-                <img src="./assets/img/sms.svg" alt="địa chỉ" /> Hỗ trợ qua hòm
-                thư
+                <img src="./assets/img/sms.png" alt="địa chỉ" /> Eメール対応
               </p>
               <!-- <p class="address1">cie@ptit.edu.vn</p> -->
               <p
@@ -1008,7 +955,7 @@ if ($_POST) {
               </p>
             </div>
             <div class="footer__section">
-              <p class="title">Nhận thông tin mới nhất</p>
+              <p class="title">最新情報入手</p>
               <form id="emailForm">
                 <div class="input-group">
                   <!-- <i class="fas fa-envelope"></i> -->
@@ -1016,39 +963,20 @@ if ($_POST) {
                   <input
                     type="email"
                     name="user_email"
-                    placeholder="Email của bạn"
+                    placeholder="メールアドレス"
                     required
                   />
                 </div>
                 <div class="form__submit show-email">
-                  <button
-                    type="submit"
-                    name="action"
-                    value="Submit Email"
-                    class="hide-on-mobile"
-                  >
-                    <p class="hide-on-mobile">Đăng ký ngay</p>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.2929 5.29289C13.6834 4.90237 14.3166 4.90237 14.7071 5.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L14.7071 18.7071C14.3166 19.0976 13.6834 19.0976 13.2929 18.7071C12.9024 18.3166 12.9024 17.6834 13.2929 17.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L13.2929 6.70711C12.9024 6.31658 12.9024 5.68342 13.2929 5.29289Z"
-                        fill="white"
-                      />
-                    </svg>
+                  <button type="submit" name="action" value="Submit Email">
+                    すぐ登録
+                    <img src="./assets/img/arrow-right-white.svg" alt="" />
                   </button>
                 </div>
               </form>
-              <!-- <p class="address2">
-                <img src="./assets/img/hand.png" alt="mũi tên" /> Tất cả thông
-                tin bạn cung cấp được cam kết bảo mật
-              </p> -->
+              <p class="address2">
+                <img src="./assets/img/hand.png" alt="mũi tên" /> 情報守秘義務保証
+              </p>
             </div>
           </div>
 
@@ -1211,7 +1139,7 @@ if ($_POST) {
           </div>
         </div>
         <div class="fcta-zalo-mess">
-          <span>Chat hỗ trợ</span>
+          <span>チャットサポート</span>
         </div>
       </div>
     </a>
@@ -1224,40 +1152,6 @@ if ($_POST) {
       ) {
         document.getElementById("linkzalo").href = "https://zalo.me/0886160606";
       }
-    </script>
-
-    <!-- Dropdown language -->
-    <script>
-      //get dropdown from document
-      const dropdowns = document.querySelectorAll(".dropdown");
-
-      //loop through all dropdown elements
-      dropdowns.forEach((faq) => {
-        //get inner element from each dropdown
-        const select = faq.querySelector(".select");
-        const menu = faq.querySelector(".dropdown--list");
-        const options = faq.querySelectorAll(".dropdown--item");
-
-        //add a click event to the select element
-        select.addEventListener("click", () => {
-          //add the clicked select styles to the selected element
-          select.classList.toggle("select-clicked");
-          //add the clicked select styles to the selected element
-          menu.classList.toggle("dropdown--list-open");
-        });
-
-        options.forEach((option) => {
-          option.addEventListener("click", () => {
-            selected.innerText = option.innerText;
-            select.classList.remove("select-clicked");
-            menu.classList.remove("dropdown--list-open");
-            options.forEach((option) => {
-              option.classList.remove("dropdown--item__active");
-            });
-            option.classList.add("dropdown--item__active");
-          });
-        });
-      });
     </script>
   </body>
 </html>
